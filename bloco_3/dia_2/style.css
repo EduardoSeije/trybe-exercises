@@ -1,0 +1,23 @@
+h1 {
+    font-family: sans-serif;
+}
+#paragraph {
+    font-weight: 600;
+    font-size: 3em;
+}
+#body {
+    font-size: 16px;
+    font-style: oblique;
+    line-height: 10px;
+    text-align: left;
+    text-decoration: rgb(200, 300, 150);
+}
+#item1 {
+    background-color: yellow;
+}
+#item2 {
+    background-color: red;
+}
+#item3 {
+    background-color: brown;
+}
