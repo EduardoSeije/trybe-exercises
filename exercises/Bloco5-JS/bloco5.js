@@ -103,11 +103,10 @@ switch (chessPiece.toLowerCase()) {
 }
 
 // Exercício 7 - Conversor de notas
-let grade = 87;
+let grade = 52;
 
 if (grade < 0 || grade > 100) {
     console.log("Error");
-    break;
 }
 else if (grade >= 90) {
     console.log("A")
@@ -128,5 +127,16 @@ else {
     console.log("F")
 }
 
+// Exercício 8 - Um número par
+let number1 = 7;
+let number2 = 5;
+let number3 = 2;
+
+if (number1 % 2 == 0 || number2 % 2 == 0 || number3 % 2 == 0) {
+    console.log(true);
+}
+else {
+    console.log(false);
+}
 
 
