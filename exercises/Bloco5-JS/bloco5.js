@@ -139,4 +139,14 @@ else {
     console.log(false);
 }
 
+// Exercício 9 - Um número ímpar
+let numb1 = 6;
+let numb2 = 5;
+let numb3 = 2;
 
+if (numb1 % 2 !== 0 || numb2 % 2 !== 0 || numb3 % 2 !== 0) {
+    console.log(true);
+}
+else {
+    console.log(false);
+}
