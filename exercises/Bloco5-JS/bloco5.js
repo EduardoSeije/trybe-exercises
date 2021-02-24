@@ -42,3 +42,16 @@ else if (num2 > num1 && num2 > num3) {
 else {
     console.log(num3);
 }
+
+// Exercício 4
+let number = -165146513;
+
+if (number > 0) {
+    console.log("Positive")
+}
+else if (number < 0) {
+    console.log("Negative")
+}
+else {
+    console.log("Zero")
+}
