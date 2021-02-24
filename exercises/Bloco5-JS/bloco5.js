@@ -150,3 +150,14 @@ if (numb1 % 2 !== 0 || numb2 % 2 !== 0 || numb3 % 2 !== 0) {
 else {
     console.log(false);
 }
+
+// Exercício 10 - Cálculo de lucro
+let cost = 50.50;
+let sell = 80.99;
+let numProd = 1000;
+let totalCost = ((50.50 * 1000) * 0.20)
+console.log(totalCost);
+
+let proft = ((sell * 1000) - totalCost);
+console.log(proft);
+
