@@ -55,3 +55,16 @@ else if (number < 0) {
 else {
     console.log("Zero")
 }
+
+// Exercício 5
+let angle1 = 80;
+let angle2 = 60;
+let angle3 = 70;
+
+let sumAngles = (angle1 + angle2 + angle3 === 180)
+if (sumAngles === true) {
+console.log(sumAngles)
+}
+else {
+    console.log(sumAngles)
+}
