@@ -161,3 +161,41 @@ console.log(totalCost);
 let proft = ((sell * 1000) - totalCost);
 console.log(proft);
 
+// Exercício 11 - Cálculo INSS
+let salarioBruto = 3500;
+let aliquotaINSS;
+let aliquotaIR;
+
+
+if (salarioBruto <= 1556.94) {
+    console.log(aliquotaINSS = 0.08 * salarioBruto);
+}
+else if (salarioBruto >= 1556.95 && salarioBruto <= 2594.92) {
+    console.log(aliquotaINSS = 0.09 * salarioBruto);
+}
+else if (salarioBruto >= 2594.93 && salarioBruto <= 5189.82) {
+    console.log(aliquotaINSS = 0.11 * salarioBruto);
+}
+else {
+    console.log(aliquotaINSS = salarioBruto - 570.88);
+}
+
+let salarioDescINSS = (salarioBruto - aliquotaINSS);
+console.log("Salário Bruto - INSS = R$" + salarioDescINSS);
+
+if (salarioBruto <= 1903.98) {
+    console.log(aliquotaIR = 0);
+}
+else if (salarioBruto >= 1903.99 && salarioBruto <= 2826.65) {
+    console.log(aliquotaIR = 0.075);
+}
+else if (salarioBruto >= 2826.66 && salarioBruto <= 3751.05) {
+    console.log(aliquotaIR = 0.15);
+}
+else if (salarioBruto >= 3751.06 && salarioBruto <= 4664.68) {
+    console.log(aliquotaIR = 0.225)
+}
+else {
+    console.log(aliquotaIR = 0.275);
+}
+
