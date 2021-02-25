@@ -162,9 +162,10 @@ let proft = ((sell * 1000) - totalCost);
 console.log(proft);
 
 // Exercício 11 - Cálculo INSS
-let salarioBruto = 3500;
+let salarioBruto = 3000;
 let aliquotaINSS;
 let aliquotaIR;
+let descontoIR;
 
 
 if (salarioBruto <= 1556.94) {
@@ -180,22 +181,41 @@ else {
     console.log(aliquotaINSS = salarioBruto - 570.88);
 }
 
-let salarioDescINSS = (salarioBruto - aliquotaINSS);
-console.log("Salário Bruto - INSS = R$" + salarioDescINSS);
+let salarioBase = (salarioBruto - aliquotaINSS);
+console.log("Salário Bruto - INSS = R$" + salarioBase);
 
-if (salarioBruto <= 1903.98) {
+if (salarioBase<= 1903.98) {
     console.log(aliquotaIR = 0);
 }
-else if (salarioBruto >= 1903.99 && salarioBruto <= 2826.65) {
+else if (salarioBase >= 1903.99 && salarioBase <= 2826.65) {
     console.log(aliquotaIR = 0.075);
 }
-else if (salarioBruto >= 2826.66 && salarioBruto <= 3751.05) {
+else if (salarioBase >= 2826.66 && salarioBase <= 3751.05) {
     console.log(aliquotaIR = 0.15);
 }
-else if (salarioBruto >= 3751.06 && salarioBruto <= 4664.68) {
+else if (salarioBase >= 3751.06 && salarioBase <= 4664.68) {
     console.log(aliquotaIR = 0.225)
 }
 else {
     console.log(aliquotaIR = 0.275);
 }
 
+
+if (salarioBase <= 1903.98) {
+    console.log(descontoIR= 0);
+}
+else if (salarioBase >= 1903.99 && salarioBase <= 2826.65) {
+    console.log(descontoIR = 142.80);
+}
+else if (salarioBase >= 2826.66 && salarioBase <= 3751.05) {
+    console.log(descontoIR = 354.80);
+}
+else if (salarioBase >= 3751.06 && salarioBase <= 4664.68) {
+    console.log(descontoIR = 636.13)
+}
+else {
+    console.log(descontoIR = 869.36);
+}
+
+let resultado = (salarioBase - (salarioBase * aliquotaIR - descontoIR));
+console.log("O salário líquido recebido é R$" + resultado);
