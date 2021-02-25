@@ -166,19 +166,19 @@ let salarioBruto = 3000;
 let aliquotaINSS;
 let aliquotaIR;
 let descontoIR;
-
+console.log("Salário bruto = R$" + salarioBruto);
 
 if (salarioBruto <= 1556.94) {
-    console.log(aliquotaINSS = 0.08 * salarioBruto);
+    console.log("Valor a descontar - INSS = R$" + (aliquotaINSS = 0.08 * salarioBruto));
 }
 else if (salarioBruto >= 1556.95 && salarioBruto <= 2594.92) {
-    console.log(aliquotaINSS = 0.09 * salarioBruto);
+    console.log("Valor a descontar - INSS = R$" + (aliquotaINSS = 0.09 * salarioBruto));
 }
 else if (salarioBruto >= 2594.93 && salarioBruto <= 5189.82) {
-    console.log(aliquotaINSS = 0.11 * salarioBruto);
+    console.log("Valor a descontar - INSS = R$" + (aliquotaINSS = 0.11 * salarioBruto));
 }
 else {
-    console.log(aliquotaINSS = salarioBruto - 570.88);
+    console.log("Valor a descontar INSS = R$" + (aliquotaINSS = salarioBruto - 570.88));
 }
 
 let salarioBase = (salarioBruto - aliquotaINSS);
@@ -188,16 +188,16 @@ if (salarioBase<= 1903.98) {
     console.log(aliquotaIR = 0);
 }
 else if (salarioBase >= 1903.99 && salarioBase <= 2826.65) {
-    console.log(aliquotaIR = 0.075);
+    console.log("Alíquota IR aplicada = R$" + (aliquotaIR = 0.075));
 }
 else if (salarioBase >= 2826.66 && salarioBase <= 3751.05) {
-    console.log(aliquotaIR = 0.15);
+    console.log("Alíquota IR aplicada = R$" + (aliquotaIR = 0.15));
 }
 else if (salarioBase >= 3751.06 && salarioBase <= 4664.68) {
-    console.log(aliquotaIR = 0.225)
+    console.log("Alíquota IR aplicada = R$" + (aliquotaIR = 0.225));
 }
 else {
-    console.log(aliquotaIR = 0.275);
+    console.log("Alíquota IR aplicada = R$" + (aliquotaIR = 0.275));
 }
 
 
@@ -205,16 +205,16 @@ if (salarioBase <= 1903.98) {
     console.log(descontoIR= 0);
 }
 else if (salarioBase >= 1903.99 && salarioBase <= 2826.65) {
-    console.log(descontoIR = 142.80);
+    console.log("Valor a ser deduzido IR = R$" + (descontoIR = 142.80));
 }
 else if (salarioBase >= 2826.66 && salarioBase <= 3751.05) {
-    console.log(descontoIR = 354.80);
+    console.log("Valor a ser deduzido IR = R$" + (descontoIR = 354.80));
 }
 else if (salarioBase >= 3751.06 && salarioBase <= 4664.68) {
-    console.log(descontoIR = 636.13)
+    console.log("Valor a ser deduzido IR = R$" + (descontoIR = 636.13));
 }
 else {
-    console.log(descontoIR = 869.36);
+    console.log("Valor a ser deduzido IR = R$" + (descontoIR = 869.36));
 }
 
 let resultado = (salarioBase - (salarioBase * aliquotaIR - descontoIR));
