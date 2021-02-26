@@ -82,3 +82,43 @@ for (let index9 = 0; index9 < array8.length; index9++) {
     console.log(array8[index9] / 2)
 }
 
+// Exercício Bônus - Ordem crescente
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+for (let i = 1; i < numbers.length; i++) {
+    for (let j = 0; j < i; j++) {
+      if (numbers[i] < numbers[j]) {
+        let position = numbers[i];
+  
+        numbers[i] = numbers[j];
+        numbers[j] = position;
+      }
+    }
+  }
+  console.log(numbers)
+
+// Ordem decrescente
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+for (let i = 1; i < numbers.length; i++) {
+    for (let j = 0; j < i; j++) {
+      if (numbers[i] > numbers[j]) {
+        let position = numbers[i];
+  
+        numbers[i] = numbers[j];
+        numbers[j] = position;
+      }
+    }
+  }
+  console.log(numbers)
+
+// Criando um novo array
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let arrayBonus =[];
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i + 1]) {
+        arrayBonus.push(numbers[i] * numbers[i+1]);
+    } else {
+        arrayBonus.push(numbers[i] + 2);
+    }
+  }
+  console.log(arrayBonus)
