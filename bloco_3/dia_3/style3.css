@@ -1,0 +1,14 @@
+.list-title, .top3 {
+    text-align: center;
+}
+
+li:hover {
+    background-color: aquamarine;
+}
+li:active {
+    font-family: fantasy;
+}
+
+ol, ul {
+    list-style: none;
+}
