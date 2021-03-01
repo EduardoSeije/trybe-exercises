@@ -10,3 +10,9 @@ console.log('Bem-vinda, ' + info['personagem']);
 // Exercício 02 - Insira nova propriedade com o nome de chave 'recorrente' e o valor 'sim'.
 info.recorrente = 'Sim';
 console.log(info);
+
+// Exercício 03 - Faça um for in que mostre as chaves do obj
+
+for (let key in info) {
+    console.log(key);
+}
