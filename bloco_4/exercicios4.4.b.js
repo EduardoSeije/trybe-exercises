@@ -24,3 +24,36 @@ function biggestNumbers (array) {
     console.log(biggestNumber);
 }
 biggestNumbers(array);
+
+
+// Exercício 03 - Crie uma função que receba uma array de inteiros e retorne o menor valor 
+let arraySmallestNumb = [2, 4, 6, 7, 10, 0, -3];
+let smallestNumb = 1000000;
+
+function smallestNumbers (arraySmallestNumb) {
+    for (let indexSmall = 0; indexSmall <= arraySmallestNumb.length; indexSmall += 1) {
+        if (arraySmallestNumb[indexSmall] < smallestNumb) {
+            smallestNumb = arraySmallestNumb[indexSmall];
+        }
+    }
+    console.log(smallestNumb)
+}
+smallestNumbers(arraySmallestNumb);
+
+
+
+// Exercício 04 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres
+let arrayNames = ['José', 'Lucas', 'Nadia', 'Fernanda', 'Cairo', 'Joana']
+let biggerNameLetters = 0;
+let biggestName = arrayNames[0];
+
+function nameLetterCount (arrayNames) {
+    for (let indiceNames in arrayNames) {
+        if (biggestName.length < arrayNames[indiceNames].length) {
+            biggestName = arrayNames[indiceNames];
+        }
+    }
+    console.log(biggestName);
+}
+
+nameLetterCount(arrayNames);
