@@ -57,3 +57,14 @@ function nameLetterCount (arrayNames) {
 }
 
 nameLetterCount(arrayNames);
+
+// Exercício 05 - Crie uma função que receba uma array de inteiros e retorne o que mais se repete.
+let numbers = [2, 3, 2, 5, 8, 2, 3];
+let repeatedNumber = 0;
+function repeatedNumbers(numbers) {
+    for (indexNumb in numbers) {
+        if (numbers[0] === numbers[indexNumb]) {
+
+        }
+    }
+}
