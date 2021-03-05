@@ -91,7 +91,13 @@
       let image = document.createElement("img");
       image.className = "small-image"
       image.src = "https://picsum.photos/200"
-      document.querySelectorAll("div")[2].appendChild(image);  
+      document.querySelectorAll("div")[2].appendChild(image); 
+      
+      // Exercício 08
+      let list = document.createElement("ul");
+      let ListContent = ["<li>1</li> <li>2</li> <li>3</li> <li>4</li> <li>5</li> <li>6</li> <li>7</li> <li>8</li> <li>9</li> <li>10</li>"];
+      list.innerHTML = ListContent; 
+      document.querySelectorAll("div")[3].appendChild(list); 
 
     </script>
   </body>
