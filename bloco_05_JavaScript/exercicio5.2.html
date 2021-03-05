@@ -95,9 +95,13 @@
       
       // Exercício 08
       let list = document.createElement("ul");
-      let ListContent = ["<li>1</li> <li>2</li> <li>3</li> <li>4</li> <li>5</li> <li>6</li> <li>7</li> <li>8</li> <li>9</li> <li>10</li>"];
-      list.innerHTML = ListContent; 
-      document.querySelectorAll("div")[3].appendChild(list);
+      divRightContent.appendChild(list);
+      const ListContent = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+      for (let key in ListContent) {
+        const listaLi = document.createElement("li");
+        listaLi.innerHTML = ListContent[key];
+        list.appendChild(listaLi)
+      }
       
       // Exercício 09 
       let tagsH3 = document.createElement("h3");
@@ -124,7 +128,6 @@
       centerContent.style.backgroundColor = "green";
       
       // Exercício 6.2
-      list.innerHTML = ["<li>1</li> <li>2</li> <li>3</li> <li>4</li> <li>5</li> <li>6</li> <li>7</li> <li>8</li>"];    
       
 
 
