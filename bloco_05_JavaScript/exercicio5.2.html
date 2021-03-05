@@ -97,7 +97,36 @@
       let list = document.createElement("ul");
       let ListContent = ["<li>1</li> <li>2</li> <li>3</li> <li>4</li> <li>5</li> <li>6</li> <li>7</li> <li>8</li> <li>9</li> <li>10</li>"];
       list.innerHTML = ListContent; 
-      document.querySelectorAll("div")[3].appendChild(list); 
+      document.querySelectorAll("div")[3].appendChild(list);
+      
+      // Exercício 09 
+      let tagsH3 = document.createElement("h3");
+      let arrayTags =[];
+      
+
+      // Exercírio 1.2
+      tagH1.className = "title";
+
+      // Exercício 2.2
+      tagsH3.className = "description";
+
+      // Exercício 3.2
+      let mainContent = document.querySelectorAll("div")[0];
+      let leftContent = document.querySelectorAll("div")[2];
+      mainContent.removeChild(leftContent);
+
+      //Exercício 4.2
+      let rightContent = document.querySelectorAll("div")[2];
+      rightContent.style.marginRight = "auto";
+
+      // Exercício 5.2
+      let centerContent = document.querySelectorAll("div")[1];
+      centerContent.style.backgroundColor = "green";
+      
+      // Exercício 6.2
+      list.innerHTML = ["<li>1</li> <li>2</li> <li>3</li> <li>4</li> <li>5</li> <li>6</li> <li>7</li> <li>8</li>"];    
+      
+
 
     </script>
   </body>
