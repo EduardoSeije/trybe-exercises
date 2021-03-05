@@ -26,3 +26,12 @@ function dayCreator () {
 dayCreator()
 
 // Exercício 02
+function createBtn (string) {
+    let divButtons = document.querySelector(".buttons-container");
+    let buttonFeriado = document.createElement("button");
+    buttonFeriado.innerHTML = string;
+    buttonFeriado.setAttribute = ("id" , "button");
+    divButtons.appendChild(buttonFeriado);    
+
+}
+createBtn("Feriados");
