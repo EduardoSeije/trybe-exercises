@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <script>
+      // Exercício 01
+      let tagH1 = document.createElement("h1");
+      tagH1.innerHTML = "Exercício 5.2 - JavaScript DOM";
+      document.getElementById("body").appendChild(tagH1);
+
+      // Exercício 02
+      let divMainContent = document.createElement("div");
+      divMainContent.className = "main-content";
+      document.getElementById("body").appendChild(divMainContent);
+
+      // Exercício 03 
+      let divCenterContent = document.createElement("div");
+      divCenterContent.className = "center-content";
+      document.querySelector("div").appendChild(divCenterContent);
+      
+      // Exercício 04 
+      let paragraph = document.createElement("p");
+      paragraph.innerText = "Olá mundo";
+      document.querySelectorAll("div")[1].appendChild(paragraph);
+
+      // Exercício 05
+      let divLeftContent = document.createElement("div");
+      divLeftContent.className = "left-content";
+      document.querySelectorAll("div")[0].appendChild(divLeftContent);
+
+      // Exercício 06 
+      let divRightContent = document.createElement("div");
+      divRightContent.className = "right-content";
+      document.querySelectorAll("div")[0].appendChild(divRightContent);
+    
+      // Exercício 07 
+      let image = document.createElement("img");
+      image.className = "small-image"
+      image.src = "https://picsum.photos/200"
+      document.querySelectorAll("div")[2].appendChild(image); 
+      
+      // Exercício 08
+      let list = document.createElement("ul");
+      divRightContent.appendChild(list);
+      const ListContent = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+      for (let key in ListContent) {
+        const listaLi = document.createElement("li");
+        listaLi.innerHTML = ListContent[key];
+        list.appendChild(listaLi)
+      }
+      
+      // Exercício 09 
+      let tagsH3 = document.createElement("h3");
+      let arrayTags =[];
+      
+
+      // Exercírio 1.2
+      tagH1.className = "title";
+
+      // Exercício 2.2
+      tagsH3.className = "description";
+
+      // Exercício 3.2
+      let mainContent = document.querySelectorAll("div")[0];
+      let leftContent = document.querySelectorAll("div")[2];
+      mainContent.removeChild(leftContent);
+
+      //Exercício 4.2
+      let rightContent = document.querySelectorAll("div")[2];
+      rightContent.style.marginRight = "auto";
+
+      // Exercício 5.2
+      let centerContent = document.querySelectorAll("div")[1];
+      centerContent.style.backgroundColor = "green";
+      
+      // Exercício 6.2
+      
+
+
+    </script>
+  </body>
+</html>

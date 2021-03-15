@@ -1,0 +1,60 @@
+
+<div id="paiDoPai">
+  <div id="pai">
+    <div id="primeiroFilho"></div>
+    <div id="elementoOndeVoceEsta">
+      <div id="primeiroFilhoDoFilho"></div>
+      <div id="segundoEUltimoFilhoDoFilho"></div>
+    </div>
+    Atenção!
+    <div id="terceiroFilho"></div>
+    <div id="quartoEUltimoFilho"></div>
+  </div>
+</div>
+<script>
+
+  // 01 - acesse o elemento elementoOndeVoceEsta; 
+document.getElementById('elementoOndeVoceEsta');
+
+// 02 - Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele
+document.getElementById('elementoOndeVoceEsta').parentNode.style.color = 'blue';
+
+// 03 - Acesse o primeiroFilhoDoFilho e adicione um texto a ele. 
+document.querySelector('#elementoOndeVoceEsta').firstChild;
+
+// 04 - Acesse primeiroFilho a partir de pai 
+document. getElementById('pai').firstChild.firstChild;
+
+// 05 - Acesse o primeirFIlho a partir de elementoOndeVoceEsta
+document.getElementById('elementoOndeVoceEsta').firstChild;
+
+// 06 - Acesse o texto Atenção a partir de ElementoOndeVoceEsta
+document.getElementById('elementoOndeVoceEsta').nextElementSibling;
+
+// 07 - Acesse o terceiroFIlho a partir do elementoOndeVoceEsta
+document.getElementById('elementoOndeVoceEsta').nextElementSibling.firstChild;
+
+// 08 - Acesse o terceiroFilho a partir de pai
+document.getElementById('pai').nextElementSibling.nextElementSibling.firstChild;
+
+// CRIANDO ELEMENTOS. 
+// 01 - Crie um irmão para elementoOndeVOceEsta
+let newElementIrmao = document.createElement('div');
+newElementIrmao.innerHTML = 'Irmão'
+document.getElementById('pai').appendChild(newElementIrmao);
+
+// 02 - Crie um filho para elementoOndeVoceEsta
+let newChild = document.createElement('div');
+newChild.innerHTML = "meuFilho";
+document.getElementById("elementoOndeVoceEsta").appendChild(newChild);
+
+// 03 - Crie um filho para primeiroFilhoDoFilho
+let newChilOfChild = createElement('div');
+newChilOfChild = "FilhoDoPrimeiroFilhoDoFilho";
+newChilOfChild.idName = "FilhoDoPrimeiroFilhoDoFilho";
+document.getElementById("primeiroFilhoDoFilho").appendChild(newChilOfChild);
+
+// 04 - A partir do filho criado acesse terceiroFilho 
+document.getElementById("FilhoDoPrimeiroFilhoDoFilho").nextSibling;
+
+</script>
