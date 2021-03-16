@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO CURRÍCULO</title>
+    <link rel="stylesheet" href="bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="node_modules/popup-validation/bin/validation.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="title pt-5">Formulário de Currículo</h1>
+    </header>
+    
+    <script src="node_modules/popup-validation/bin/validation.min.js"></script> 
+    <div class="validate-popup  " style="left: 219px; top: 271px; margin-top: -36px;">Required</div>
+    <form method="GET">
+        <div class="field mt-2">
+            <div class="control has-icons-left">
+                <p class="label">Dados pessoais</p>
+                
+                <p class="label">Nome</p>
+                <label class="label" for="name"></label>
+                <input class="input is-rounded is-primary" id="name" type="text" name="name" maxlength="40" data-validate="required" placeholder="Digite seu nome completo">
+                
+                <p class="label">E-mail</p>
+                <label class="label" for="email"></label>
+                <input class="input is-rounded is-link " id="email" type="email" name="email" maxlength="50" data-validate="required,email" placeholder="Digite seu e-mail">
+                
+                <p class="label">CPF</p>
+                <label class="label" for="documentCPF"></label>
+                <input class="input is-rounded is-danger" id="documentCPF" type="text" maxlength="11" data-validate="required" placeholder="Digite seu CPF">
+                
+                <p class="label">Endereço</p>
+                <label class="label" for="address"></label>
+                <input class="input is-rounded is-warning " id="address" type="text" maxlength="200" data-validate="required" placeholder="Digite seu endereço completo">
+                
+                <p class="label">Cidade</p>
+                <label class="label" for="city"></label>
+                <input class="input is-rounded is-warning" id="city" type="text" maxlength="28" data-validate="required" placeholder="Digite sua cidade">
+                
+                <div class="field select is-info is-small is-rounded">
+                    <div class="control">
+                        <p class="label">Estado</p>
+                        <label class="label" for="state"></label>
+                        <select id="state"></select>        
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="field" id="residenceSelector">
+                    <div class="control">
+                        <p class="label">Residência</p>
+                        <label class="label" for="residence1">
+                            <input  id="residence1" type="radio" name="residence-type" value="casa">
+                            Casa
+                        </label>
+                        <label class="label" for="residence2">
+                            <input  id='residence2' type="radio" name="residence-type" value="apartamento">
+                            Apartamento
+                        </label>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+            <div class="field">
+                <div class="control">
+
+                    <p class="label">Dados sobre último emprego</p>
+                    <p class="label">Resumo currículo</p>
+                    <label class="label" for="resume"></label>
+                    <textarea class="textarea is-primary" id="resume" rows = "10" maxlength="1000" required placeholder="Digite um breve resumo de seu currículo."></textarea>
+                    
+                    <p class="label">Cargo</p>
+                    <label class="label" for="job"></label>
+                    <input class="input" id="job" type="text" maxlength="40" required placeholder="Digite o cargo desejado">
+                    
+                    <p class="label">Descrição do cargo</p>
+                    <label class="label" for="job-description"></label>    
+                    <textarea class="textarea is-primary" id="job-description" rows="5" maxlength="500" placeholder="Digite uma breve descrição do cargo"></textarea>    
+                    
+                    <p class="label">Data de início</p>
+                    <label class="label" for="start-date"></label>
+                    <input class="input" id="datepicker" type="date"  required placeholder="Digite uma data para início">
+                </div>
+        </div>
+
+        <br>
+        <div class="field">
+            <div class="control">
+                <button class="button is-success is-primary is-rounded" id="send" type="submit">Enviar dados</button>
+                <button class="button is-danger  is-rounded" id="clearAll">Limpar</button>
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
