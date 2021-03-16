@@ -1,0 +1,44 @@
+body {
+    background-color: azure;
+}
+
+header {
+    background-color:cadetblue;
+    border: double black;
+    text-align: center;
+    border-radius: 3px;
+    display: flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 360px;
+}
+
+img {
+    max-width: 50px;
+    max-height: 50px;
+    padding-top: 30px;
+    padding-right: 50px;
+    }
+
+fieldset {
+    width: 130px;
+    border-radius: 5px;
+}
+
+input {
+    width: 330px;
+    border-radius: 5px;
+}
+
+#job-description {
+    width:  330px;
+}
+
+#resume {
+    width: 330px;
+}
+
+legend {
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
