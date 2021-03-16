@@ -51,10 +51,16 @@ function createStates() {
 createStates();
 
 function completeInfo() {
+    let form = document.querySelector('form');
+    let data = Object.fromEntries(new FormData(form).entries()); // Source - https://stackoverflow.com/questions/2276463/how-can-i-get-form-data-with-javascript-jquery
     let info = document.createElement('div');
     info.className = ('informacao-completa');
+    info.innerText = data;
     document.querySelector('body').appendChild(info);
+    console.log(info);
 }
+const submitBtn = document.querySelector('#send');
+submitBtn.addEventListener('click', completeInfo);
 
 function clearAll() {
     document.location.reload();
