@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO CURRÍCULO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário de Currículo</h1>
+        <img src="kisspng-rsum-curriculum-vitae-template-moto-highway-ra-resume-5b20f1095ae395.1512639015288855133723.jpg" alt="figura de documento de currícul">
+    </header>
+    <form method="GET">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <legend>Nome</legend>
+            <label for="name"></label>
+            <input id="name" type="text" name="name" maxlength="40" required placeholder="Digite seu nome completo">
+        
+            <legend>E-mail</legend>
+            <label for="email"></label>
+            <input id="email" type="email" name="email" maxlength="50" required placeholder="Digite seu e-mail">
+       
+            <legend>CPF</legend>
+            <label for="documentCPF"></label>
+            <input id="documentCPF" type="text" maxlength="11" required placeholder="Digite seu CPF">
+        
+            <legend>Endereço</legend>
+            <label for="address"></label>
+            <input id="address" type="text" maxlength="200" required placeholder="Digite seu endereço completo">
+        
+            <legend>Cidade</legend>
+            <label for="city"></label>
+            <input id="city" type="text" maxlength="28" required placeholder="Digite sua cidade">
+
+            <legend>Estado</legend>
+            <label for="state"></label>
+            <select id="state">
+
+            </select>
+            
+            <div id="residenceSelector">
+                <legend>Residência</legend>
+                <label for="residence1"></label>
+                <input id="residence1" type="radio" name="residence-type" value="casa">Casa
+                <label for="residence2"></label>
+                <input id='residence2' type="radio" name="residence-type" value="apartamento">Apartamento
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Dados sobre último emprego</legend>
+            <legend>Resumo currículo</legend>
+            <label for="resume"></label>
+            <textarea id="resume" rows = "10" maxlength="1000" required placeholder="Digite um breve resumo de seu currículo."></textarea>
+
+            <legend>Cargo</legend>
+            <label for="job"></label>
+            <input id="job" type="text" maxlength="40" required placeholder="Digite o cargo desejado">
+        
+            <legend>Descrição do cargo</legend>
+            <label for="job-description"></label>    
+            <textarea id="job-description" rows="5" maxlength="500" placeholder="Digite uma breve descrição do cargo"></textarea>    
+
+            <legend>Data de início</legend>
+            <label for="start-date"></label>
+            <input id="start-date" type="date" required placeholder="Digite uma data para início">
+        </fieldset>
+
+        <br>
+
+        <button id="send" type="submit">Enviar dados</button>
+        <button id="clearAll">Limpar</button>
+        <script src="script.js"></script>
+    </form>
+</body>
+</html>

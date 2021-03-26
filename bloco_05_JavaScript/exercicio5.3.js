@@ -25,13 +25,26 @@ function dayCreator () {
 }
 dayCreator()
 
-// Exercício 02
+// Exercício 02 * Ainda falta alterar o ID!
 function createBtn (string) {
     let divButtons = document.querySelector(".buttons-container");
     let buttonFeriado = document.createElement("button");
     buttonFeriado.innerHTML = string;
-    buttonFeriado.setAttribute = ("id" , "button");
+    buttonFeriado.id = "btn-holiday"
     divButtons.appendChild(buttonFeriado);    
 
 }
 createBtn("Feriados");
+
+// Exercício 03
+let buttonFeriado = document.querySelector("button");
+let holidayList = document.getElementsByClassName("holiday");
+function buttonFunction() {
+   document.getElementsByClassName("holiday")[0].style.backgroundColor = "blue";
+   document.getElementsByClassName("holiday")[1].style.backgroundColor = "blue";
+   document.getElementsByClassName("holiday")[2].style.backgroundColor = "blue";
+} 
+buttonFeriado.addEventListener("click", buttonFunction);
+
+
+// Exercício 04
