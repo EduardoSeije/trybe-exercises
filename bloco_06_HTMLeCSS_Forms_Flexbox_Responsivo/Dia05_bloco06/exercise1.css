@@ -1,0 +1,50 @@
+body {
+    font-size: larger;
+    margin: 10px;
+}
+h1 {
+    font-size: smaller;
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+    padding-top: 20px;
+}
+
+@media screen  and (min-width: 480px) {
+   body { 
+    background-color: blue;
+    font-size: smaller;
+    margin: 0;
+
+   }
+   .figures {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content:space-around;
+        max-height: 1200px;
+        max-width: 45%;
+   }
+
+   img {
+       padding-left: 10px;
+       justify-content: space-between;
+   }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        background-color: chartreuse;
+        font-size: smaller;
+        margin: 10px;
+        max-width: 80%;
+    }
+}

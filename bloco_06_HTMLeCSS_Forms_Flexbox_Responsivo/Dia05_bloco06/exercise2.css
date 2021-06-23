@@ -1,0 +1,152 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+@media screen and (min-width: 800px) {
+    body {
+        background-color: cornflowerblue;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header p {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        font-size: x-large;
+    }
+
+    .header-nav-li {
+       font-size: x-large;
+    }
+
+    .aside-one {
+        font-size: x-large;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    .aside-two {
+        font-size: x-large;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .main-content {
+        font-size: x-large;
+        max-width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+        align-items: center;
+        margin: 40px;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin: 40px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        background-color: cyan;
+        margin: 0;
+        padding: 0;
+    }
+
+    header p {
+        font-size: smaller;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-nav-li {
+        display: flex;
+        flex-flow: column nowrap;
+        font-size: smaller;
+    }
+
+    .aside-one {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        font-size: smaller;
+    }
+
+    .aside-two {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        font-size: smaller;
+    }
+
+    .main-content {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin: 30px;
+        font-size: smaller;
+        text-align: center;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        font-size: x-small;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        background-color: darkgrey;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header p {
+        display: flex;
+        justify-content: center;
+    }
+
+    .aside-one {
+        display: flex;
+        font-size: smaller;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .aside-two {
+        display: flex;
+        font-size: smaller;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .main-content {
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+        margin: 30px;
+        align-items: center;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: column nowrap;
+        font-size: x-small;
+        align-items: center;
+        margin: 30px;
+    }
+}
